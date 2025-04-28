@@ -1,0 +1,86 @@
+.maindiv {
+  /* FF0000 #3da3d4 */
+  background: #000000;
+  margin: 0;
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logoimg {
+  height: 79px;
+  width: 117px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.subdiv1 {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.heading {
+  font-family: Montserrat;
+  color: #ffff;
+  cursor: pointer;
+}
+.subdiv2 {
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: 512px) {
+  .maindiv {
+    height: 80px;
+  }
+  .logoimg {
+    height: 66px;
+    width: 29%;
+  }
+  .heading {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .maindiv {
+    height: 117px;
+  }
+  .logoimg {
+    height: 89px;
+    width: 175px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+}
+
+.cartButton {
+  background: none;
+  border: none;
+  text-align: end;
+  padding-top: 40px;
+}
+.cartButtonog {
+  background: none;
+  border: none;
+}
+.icon:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.cartEffect {
+  animation: bounce 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
